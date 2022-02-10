@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.theme.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Basic jQuery Webpage</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="jquery-ui-1.13.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+            heightStyle: "content"
+        });
+
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+
+        $(function () {
+            $("#progressbar").progressbar({
+                value: 87
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">About</a></li>
+                <li><a href="https://github.com/fpease"> Contact </a> </li>
+                <li style="float:left"><a class="name">Howl's Moving Castle</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   
+
+    <h2 id="header">Summary</h2>
+    <div class="objects">
+        <img id="headerimg" src="jquery-ui-1.13.1/images/studio-ghibli-upscaled--howls-moving-castle-wallpaper.jpg"
+            width="600px" height="400px">
+
+        <p id="summary">Young Sophie Hatter is cursed by the Witch of the Waste, and turns into an old hag. Ashamed of
+            how she looks, she flees into the hills where a moving castle roams the hills. It is said to belong to the
+            young and handsome wizard Howl, who has a bad reputation. Within the castle, Sophie befriends the fire demon
+            Calcifer, who promises to help her become young again. One catch: she must help Calcifer to be free of Howl,
+            and Calcifer cannot tell her how. However, Sophie agrees to stay and try to find out about the contract
+            through other ways. Still, Howl can see that Sophie is under a spell like Calcifer can, and he falls in love
+            with her for who she is and not for what she looks like. Sophie manages to bring life to the moving castle,
+            and she helps Howl to face his former tutor, Madame Suliman.</p>
+
+        <h2 id="header2">FAQs</h2>
+        <br>
+
+        <div id="accordion">
+            <h3>Who made it?</h3>
+            <div>
+                <p>
+                    The movie was written and directed by Hayao Miyazaki. The film was produced by Toshio Suzuki and
+                    animated by Studio Ghibli.
+                </p>
+            </div>
+            <h3>When was it made?</h3>
+            <div>
+                <p>
+                    It was made in 2004.
+                </p>
+            </div>
+            <h3>How long is it?</h3>
+            <div>
+                <p>
+                    It is 119 minutes long.
+                </p>
+            </div>
+            <h3>Is it a good movie?</h3>
+            <div>
+                <p>
+                    The movie recieved very high raitings by viewers. It socred an 87% on Rotten Tomatoes and critcs
+                    said "Exquisitely illustrated by master animator Miyazaki, Howl's Moving Castle will delight
+                    children with its fantastical story and touch the hearts and minds of older viewers as well."
+                </p>
+            </div>
+        </div>
+
+        <img src="jquery-ui-1.13.1/images/thumb-1920-325547.jpg" width="600px" height="400px">
+
+        <h2 id="header2">Information</h2>
+        
+            <br>
+            <p id="date">Pick a date to watch: <input type="text" id="datepicker"></p>
+
+            <div id="progressbar">Ratings: 87%</div>
+       
+    </div>
+    <br>
+    <div class="footer">
+        <ul>
+            <li>Copyright All Rights Reserved @ 2022</li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
